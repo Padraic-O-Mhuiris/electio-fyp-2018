@@ -1,0 +1,2 @@
+Main-Class: Crypto
+Class-Path: jars/json.jar

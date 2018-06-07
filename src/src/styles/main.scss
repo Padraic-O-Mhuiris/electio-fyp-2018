@@ -1,0 +1,734 @@
+
+@import "../../node_modules/bulma/bulma.sass";
+@import '../../node_modules/bulma-extensions/bulma-timeline/dist/bulma-timeline.sass';
+
+@import url('https://fonts.googleapis.com/css?family=Exo');
+@import url('https://fonts.googleapis.com/css?family=Vollkorn');
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Cousine');
+
+
+$font1: 'Exo', sans-serif;
+$font2: 'Vollkorn', serif;
+$font3: 'Fira Mono', monospace;
+$font4: 'Julius Sans One', sans-serif;
+$font5: 'Crimson Text', serif;
+$font6: 'Poiret One', cursive;
+$font7: 'Comfortaa', cursive;
+$font8: 'Cousine', monospace;
+
+$light: #E8F0FF;
+$dark: #333638;
+
+$c-60: #ffffff;
+$c-30: #008400;
+$c-10: #57A773;
+
+$c-past: #5DD39E;
+$c-active: #1496ed;
+$c-image: #0CA4A5;
+
+$c-admin: #08B2E3;
+$c-voter: #EE6352;
+$c-candidate: #F5B700;
+$c-observer: #04E762;
+
+html {
+  background-color: $c-60;
+}
+
+
+.home {
+  .quote {
+    font-family: $font5;
+    font-size: 20px;
+    padding: 45px;
+  }
+
+  .image {
+    border-radius: 10px;
+    padding: 3px;
+  }
+
+  .admin {
+    background: $c-admin;
+  }
+
+  .voter {
+    background: $c-voter;
+  }
+
+  .candidate {
+    background: $c-candidate;
+  }
+
+  .observer {
+    background: $c-observer;
+  }
+
+  img {
+    border-radius: 5px;
+  }
+
+  .subtitle-monospace {
+    padding: 10px;
+    font-family: $font8;
+    font-size: 18px;
+  }
+
+  .break1 {
+    padding-top: 120px;
+  }
+  .break2 {
+    padding-top: 80px;
+  }
+  .hero {
+    margin-bottom: -160px;
+  }
+
+  .title {
+    margin-top: -220px;
+    font-family: $font6;
+    font-size: 100px;
+  }
+
+  .subtitle {
+    font-family: $font1;
+    font-size: 32px;
+  }
+
+  .content {
+    font-family: $font2;
+    font-size: 20px;
+    text-align: left;
+  }
+}
+.admin {
+
+  .title {
+    padding-top: 30px;
+    font-family: $font1;
+    font-size: 30px;
+  }
+
+  .subtitle {
+    padding-top: 30px;
+    font-family: $font2;
+    font-size: 20px;
+  }
+
+  .label {
+    font-family: $font1;
+    font-size: 20px;
+  }
+
+  .button {
+
+    &:hover {
+      color: $c-60;
+      background-color: $c-30;
+      border-color: $c-10; 
+    }
+    font-family: $font1;
+    font-size: 25px;
+    padding: 40px;
+    color: $c-30;
+    border-color: $c-30;
+  }
+
+  .dropdown {
+    margin-left: 20px;
+  }
+}
+
+.election {
+  
+  .title {
+    padding-top: 30px;
+    font-family: $font1;
+    font-size: 30px;
+  }
+
+  .subtitle {
+    padding-top: 30px;
+    font-family: $font2;
+    font-size: 30px;
+  }
+
+  .subtitle-monospace {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: $font8;
+    font-size: 20px;
+  }
+
+  .button.form {
+    margin-top: 10px;
+    padding: 7px;
+    font-size: 16px;
+    font-family: $font1;
+
+  }
+
+  .title-calendar {
+    padding-top: 20px;
+    font-family: $font7;
+    font-size: 20px;
+  }
+
+  .message-header {
+    font-family: $font1;
+    background-color: $c-30;
+  }
+
+  .message-body {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: $font5;
+    background-color: $c-60;
+    border-color: $c-10;
+
+  }
+
+  .mono-text {
+    font-family: $font3;
+  }
+
+  .time-input {
+    font-family: $font1;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    border-color: $c-10;
+    
+  }
+
+  p {
+    font-family: $font1;
+  }
+
+  h3 {
+    font-family: $font1;
+    font-size: 25px;
+  }
+
+  .button {
+
+    &:hover {
+      color: $c-60;
+      background-color: $c-30;
+      border-color: $c-10; 
+    }
+    font-family: $font1;
+    font-size: 25px;
+    padding: 40px;
+    color: $c-30;
+    border-color: $c-30;
+  }
+
+  .timer {
+    font-family: $font3;
+  }
+
+  .modal.is-active {
+    word-break: break-all;
+    word-wrap: normal;
+    font-size: 18px;
+
+    .modal-background {
+      background-color: $c-30;
+      opacity: 0.5;
+
+      color: $dark;
+    }
+
+    .vote-text {
+      font-family: $font3;
+      color: black;
+      font-size: 17px;
+    }
+  }
+
+  .table-mono-text {
+    font-family: $font3;
+    color: black;
+    font-size: 17px;
+    word-break: break-all;
+    margin-right: 120px;
+  }
+
+  .table-date-text {
+    padding-right: 40px;
+  }
+
+  .userswitch {
+
+    .subtitle {
+      padding: 0px;
+      font-family: $font1;
+      &:hover {
+        color: $c-60;
+      }
+
+      &:active {
+        color: $c-60;
+      }
+    }
+
+    .voter {
+
+      &:hover {
+        background-color: $c-voter;
+        box-shadow: none;
+      }
+
+      &.active {
+        background-color: $c-voter;
+        box-shadow: none;
+      }
+    }
+
+    .candidate {
+
+      &:hover {
+        background-color: $c-candidate;
+        box-shadow: none;
+      }
+
+      &.active {
+        background-color: $c-candidate;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.statusbar {
+  .notification.Administrator {
+    background-color: $c-admin;
+
+    p {
+      font-family: $font1;
+      color: $c-60;
+      font-size: 20px;
+    }
+  }
+
+  .notification.Candidate {
+    background-color: $c-candidate;
+
+    p {
+      font-family: $font1;
+      color: $c-60;
+      font-size: 20px;
+    }
+  }
+
+  .notification.Voter {
+    background-color: $c-voter;
+
+    p {
+      font-family: $font1;
+      color: $c-60;
+      font-size: 20px;
+    }
+  }
+
+  .notification.Observer {
+    background-color: $c-observer;
+
+    p {
+      font-family: $font1;
+      color: $c-60;
+      font-size: 20px;
+    }
+  }
+
+}
+.navbar.title-bar {
+  background-color: $c-30;
+}
+
+.title {
+  color: $dark;
+
+  &.search-title {
+    font-family: $font1;
+    font-size: 25px;
+    color: $dark;
+    padding: 0px;
+    margin:0px;
+    margin-bottom: 3px;
+  }
+}
+
+.section {
+
+  &.header {
+    padding: 2rem;
+  }
+
+  &.search-row {
+    padding: .5rem;
+  }
+
+  &.content-row {
+    padding: 1rem;
+  }
+}
+
+.table.election {
+  font-family: $font1;
+  font-size: 15px;
+}
+
+.box {
+
+  &.search {
+
+    .button {
+      font-family: $font1;
+      background-color: $c-30;
+      color: $c-60;
+
+      &:hover {
+        background-color: $c-10;
+      }
+    }
+  }
+}
+
+.navbar-brand {
+
+  .title-site {
+    padding-top: 5px;
+    padding-right: 50px;
+    font-family: $font6;
+    font-size: 2.25rem;
+    color: $light;
+    letter-spacing: 0.5px;
+
+    &:hover {
+      background-color: inherit;
+    }
+  }
+}
+
+.navbar-end {
+
+  a.navbar-item {
+  color: $light;
+  text-align: center;
+  font-family: $font7;
+  font-size: 18px;
+  margin-right: 40px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+    &:hover {
+      border-radius: 5px;
+      background-color: $c-10;
+    }
+  }
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.table {
+  
+  th {
+    font-size: 12px;
+    padding: 25px;
+    font-family: $font7;
+  }
+
+  td {
+    font-size: 15px;
+    padding: 25px;
+    font-family: $font7;
+
+  }
+
+}
+
+.analytics {
+  .table {
+
+    .fa .fa-circle-o {
+      background-color: $c-30;
+      color: $c-30;
+    }
+
+    .table-mono-text {
+      font-size: 12px;
+      font-family: $font3;
+    }
+
+    th {
+      font-size: 18px;
+      padding: 15px;
+      font-family: $font7;
+    }
+  
+    td {
+      font-size: 14px;
+      padding: 15px;
+      font-family: $font7;
+    }
+
+    a {
+      color: $dark
+    }
+
+    a:hover {
+      color: $c-30
+    }
+  
+  }
+}
+
+.MetaMask {
+
+  .modal.is-active {
+
+    .modal-background {
+      background-color: $c-60;
+      opacity: 60%;
+    }
+
+    .modal-card {
+      border: 2px solid $c-10;;
+      border-radius: 30px;
+      .modal-card-head {
+        background-color: $c-30;
+      }
+
+      .modal-card-foot {
+        background-color: $c-30;
+      }
+    }
+    p {
+      font-family: $font7;
+      margin-top: 40px;
+      margin-left: 100px;
+      margin-right: 100px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.steps.stepx{
+
+  .step-item::before {
+    background-image: linear-gradient(to left, $c-10 50%, $c-10 50%);
+  }
+  .step-item {
+    .step-details {
+      .step-title {
+        font-family: $font1;
+        font-size: 20px;
+      }
+    }
+    .step-marker {
+      background-color: $c-10;
+    }
+  }
+  .step-item.is-active {
+    .step-marker {
+      color: $c-active;
+      background-color: #fff;
+      border-color: $c-active;
+    } 
+  }
+  .step-item.is-active::before {
+    background-image: linear-gradient(to left,$c-past 50%, $c-past 50%);
+  }
+  .step-item.is-completed {
+    .step-marker {
+      color: $c-past;
+      background-color: #fff;
+      border-color: $c-past;
+    } 
+  }
+  .step-item.is-completed::before {
+    background-image: linear-gradient(to left, $c-past 50%, $c-past 50%);
+  }
+}
+
+.mono {
+  margin-left: 50px;
+  font-family: $font8;
+  font-size: 13px;
+  color: $light;
+
+  .fa.fa-check-circle {
+    color: $green;
+    padding-left: 3px;
+  }
+
+  .fa.fa-times-circle {
+    color: $red;
+    padding-left: 3px;
+  }
+
+  .fa.fa-cloud {
+    color: $orange;
+  }
+}
+
+.reg-nav {
+  background-color: $c-60;
+}
+
+.footer {
+  height: 20px;
+  background-color: $light;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  overflow:hidden;
+  border-top: .1rem solid $c-30;
+}
+
+.footer-tagline {
+  font-family: $font1;
+  font-size: 15px;
+  & strong {
+    font-size: 25px;
+    font-family: $font6;
+  }
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 24px;
+  height: 20px;
+  left: 36px;
+  top: 15px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: $light;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: $dark;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: $light;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.space {
+  margin-top: -160px;
+  transform: perspective 400px;
+  transform-origin: 110px 110px; 
+}
+
+.elogo{
+  margin: 0 auto;
+  position: relative;
+  // width: 400px;
+  // height: 400px;
+  transform-style: preserve-3d;
+  transform-origin: 110px 110px 0;
+  transform: perspective(400px) rotateY(46deg) rotateX(-5deg) rotateZ(-5deg);
+}
+.elogo {
+    animation: aniether 6s infinite;
+    transform-style: preserve-3d;
+    transform-origin: 110px 110px 0;
+    transform: perspective(400px) rotateY(46deg) rotateX(-5deg) rotateZ(-5deg);
+}
+
+.trif {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-left: 100px solid transparent; 
+  border-right: 100px solid transparent;
+}
+.elogo .u1 {
+    transform: translateZ(50px) rotateX(23.5deg);  
+    border-bottom: 250px solid rgba(10, 40, 122, 0.8)
+}
+.elogo .u2 { 
+    transform: rotateY(90deg) translateZ(50px) rotateX(23.5deg);
+    border-bottom: 250px solid rgba(10, 40, 122, 0.6)
+}
+.elogo .u3 { 
+    transform: rotateY(180deg) translateZ(50px) rotateX(23.5deg); 
+    border-bottom: 250px solid rgba(10, 40, 122, 0.3)
+}
+.elogo .u4 { 
+    transform: rotateY(-90deg) translateZ(50px) rotateX(23.5deg); 
+    border-bottom: 250px solid rgba(10, 40, 122, 0.3)
+}
+
+.elogo .ct { 
+    width: 200px;
+    height: 200px;
+    border: 0;
+    transform: rotateX(-90deg) translateZ(140px);
+    background-color: rgba(10, 40, 122, 0.8)
+}
+.elogo .l1 { 
+    transform: translateY(55px) translateZ(50px) rotateX(156.5deg);
+    border-bottom: 250px solid rgba(10, 40, 122, 0.8)
+}
+.elogo .l2 { 
+    transform: translateY(55px) rotateY(90deg) translateZ(50px) rotateX(156.5deg);
+    border-bottom: 250px solid rgba(10, 40, 122, 0.6);
+}
+.elogo .l3 { 
+    transform: translateY(55px) rotateY(180deg) rotateZ(0deg) translateZ(50px) rotateX(156.5deg);
+  border-bottom: 250px solid rgba(10, 40, 122, 0.3);
+}
+.elogo .l4 { 
+    transform: translateY(55px) rotateY(-90deg) rotateZ(0deg) translateZ(50px) rotateX(156.5deg); 
+  border-bottom: 250px solid rgba(10, 40, 122, 0.3);
+}
+
+@keyframes aniether {
+    30%      {transform: perspective(400px) rotateY(46deg); }
+    50%      {transform: perspective(400px) rotateY(20deg); }
+    60%      {transform: perspective(400px) rotateY(46deg); }
+    70%      {transform: perspective(400px) rotateY(65deg); }
+   100%      {transform: perspective(400px) rotateY(46deg) rotateX(-5deg) rotateZ(-5deg); }
+}
